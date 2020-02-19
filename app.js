@@ -1,51 +1,100 @@
-let car = {
-    color: 'green',
-    maxSpeed: 120,
-    cost: 1000001,
-    audio: {
-        type: 'sony',
-        wolume: '120hz' 
-    }
-
-};
-
-if (car.cost > 1000000){
-    console.log('car expensive')
-}else{
-    console.log('cheap car')
-}
 
 
+// problem solving for javaScript
 
-// if(car.color == 'red') {
-//    console.log('car red');
-// }else if (car.color == 'green')  {
-//     console.log('car green');
-// }else{
-//     console.log('невідомий колір');
+
+// let admin = 'nazar';
+// let name = 'Джон';
+
+// admin = name;
+
+// alert(admin);
+
+
+// // ------------------------------------------
+// let a =1, b =1;
+
+// let c = ++a; // answer c= 2, a = 2 
+// let d = b++; // answer d = 1, b = 2 
+
+
+// // ------------------------------------------
+// let a = 2;
+
+// let x = 1 + (a*=2)  // answer  x = 5 
+
+// ----------------------------------------------
+
+// let yourName = prompt('як тебе звуть?')
+
+// alert(yourName);
+
+// ----------------------------------------------
+// let car = {
+//     maxspeed: 250, 
+    
+// };
+
+// speedChage();
+
+// function speedChage(){
+//     console.log('швидкысть була:', car.maxspeed);
+//     car. maxspeed = 300;
+//     console.log('швидкысть стала:', car.maxspeed);
+
 // }
 
-car.color == 'green' ? console.log('green') : console.log('red');
+
+// ---------------------------------------------------
+// // це зверненя
+// let speed =  speedChage; // функію можна присвоїти перемінній і тоді можна викликати через ідинтифікатор speed;
+// // це виклик або запуск
+// speed(); //таким чином;
+
+// function speedChage(){
 
 
-console.log("2" * "3" );
-// 6
-console.log(4+5+"px" );
-// 9px
-console.log(""-1 + 0 );
-// -1
-console.log( " " + 1 + 0);
-// 10
-console.log(true+false);
-// 1
-console.log( "$"+ 4 + 7 );
-// $47
-console.log("4"- 2 );
-// 2
-console.log("4px" - 2 );
-// nan
-console.log(7/0 );
-// infinity
-console.log(  "  -9  " + 5);
-// -9 5
-console.log( "  -9  " - 5);
+
+
+
+
+// };
+// також можна викликати через властивість див нижче
+// let car = {
+//     maxspeed: 250, 
+//     update:speedChage
+// };
+
+// car.update();
+
+
+
+// function speedChage(){
+//     console.log( car.maxspeed);
+
+// }
+
+
+// ----------------------------------------
+
+// function watch(message) {
+//     return message +'ACDC'; // конкотинація рядків
+// };
+
+
+// console.log(watch("object"));
+
+//    ---------------------------------------задача_________
+
+
+function fcolor ( color = "red"){
+    if( color == "red"){ return;}
+    console.log(color);
+}
+let paint = fcolor;
+
+paint();
+
+paint('sraka');
+
+
