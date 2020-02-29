@@ -231,8 +231,52 @@
 // }while (num <= 100 && num);
 
 // -----------------------------------------------
-let red = "red";
+// let red = "red";
 
-let arr = ['apple','peyp','bins',12, 1,red];
+// let arr = ['apple','peyp','bins',12, 1,red];
 
-console.log( arr);
+// console.log( arr);
+
+// let anonym = m+esage => {
+//   let count = 2;
+//   return mesage + 2
+// };
+
+// console.log(anonym("анонімна функція"));
+
+// // ------------------------------------------ задача список і метод масива !________________________________
+
+// let myCar = {
+//   drivers: [ '"Mickael"', '"David","luka",'],
+//   getDriver(just){
+//     console.log('Current driver --- ' + this.drivers[just]);
+//   }
+// }
+// myCar.getDriver(2);
+// ------------------------------------------------------------------------
+// let heyter = {
+//   firstName: 'Santa',
+//   lastName: 'Claus',
+//    getName() {
+//     return `${this.firstName}  ${this.lastName}`;
+//    }
+   
+  
+// }
+// console.log(heyter.getName());
+
+// --------
+
+class Bloger {
+  constructor( profN, lastName, firstName){
+    this.profN = profN;
+    this.firstName = firstName;
+    this.lastName =  lastName;
+  }
+  sayName(){
+        console.log(`мета [${this.profN} ${this.firstName} ${this.lastName}]`);
+  }
+}
+
+let blgr = new Bloger('фронтендер:','nazar','kolos');
+blgr.sayName();
