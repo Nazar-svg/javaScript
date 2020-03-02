@@ -267,16 +267,25 @@
 
 // --------
 
-class Bloger {
-  constructor( profN, lastName, firstName){
-    this.profN = profN;
-    this.firstName = firstName;
-    this.lastName =  lastName;
-  }
-  sayName(){
-        console.log(`мета [${this.profN} ${this.firstName} ${this.lastName}]`);
-  }
-}
+// class Bloger {
+//   constructor( profN, lastName, firstName){
+//     this.profN = profN;
+//     this.firstName = firstName;
+//     this.lastName =  lastName;
+//   }
+//   sayName(){
+//         console.log(`мета [${this.profN} ${this.firstName} ${this.lastName}]`);
+//   }
+// }
 
-let blgr = new Bloger('фронтендер:','nazar','kolos');
-blgr.sayName();
+// let blgr = new Bloger('фронтендер:','nazar','kolos');
+// blgr.sayName();
+
+
+// ----------------------_______________-------------------------
+
+let user = {};
+user.name = "John";
+user.surname = "Smith";
+user.name = "Pete";
+delete user.name;
