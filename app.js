@@ -284,8 +284,33 @@
 
 // ----------------------_______________-------------------------
 
-let user = {};
-user.name = "John";
-user.surname = "Smith";
-user.name = "Pete";
-delete user.name;
+// let user = {};
+// user.name = "John";
+// user.surname = "Smith";
+// user.name = "Pete";
+// delete user.name;
+
+// ______________________________________________________________________//
+
+// let element ={
+//   class: 'div',    тут я міняю значення  тегу <input>  in html                      
+//   value: 32,
+// }
+
+// let findElement = document.querySelector('.div');
+
+// findElement.value = element.value ;
+// ________________
+
+
+
+// приклад з використанням  стрілочної функції на вирахунок найбільшого ек чщтного  числа ч
+
+const arr = ['1','2','3','4'];
+
+const res = arr
+.map((el) => parseInt(el))
+.filter((num) => num%2)
+.reduce((max, value) => Math.max(max, value), 0);
+
+console.log(res);
